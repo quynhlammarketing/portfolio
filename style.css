@@ -15,12 +15,13 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro", "Segoe UI", sans-serif;
   color: var(--text-color);
   background:
     radial-gradient(circle at top left, rgba(72, 128, 255, 0.18), transparent 35%),
     radial-gradient(circle at bottom right, rgba(45, 179, 146, 0.16), transparent 30%),
     var(--bg-color);
+  line-height: 1.6;
 }
 
 a {
@@ -46,7 +47,7 @@ a:hover {
   border-radius: 28px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(232, 241, 255, 0.9));
   border: 1px solid var(--border-color);
-  box-shadow: 0 20px 50px var(--shadow-color);
+  box-shadow: 0 18px 45px rgba(20, 35, 90, 0.1);
 }
 
 .eyebrow {
@@ -83,7 +84,7 @@ a:hover {
   border-radius: 24px;
   background: var(--card-color);
   border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 14px 35px rgba(18, 28, 45, 0.08);
+  box-shadow: 0 12px 30px rgba(18, 28, 45, 0.07);
   backdrop-filter: blur(8px);
 }
 
@@ -91,6 +92,7 @@ a:hover {
   margin-top: 0;
   margin-bottom: 14px;
   font-size: 1.45rem;
+  letter-spacing: -0.02em;
 }
 
 .card p,
@@ -112,10 +114,18 @@ a:hover {
 
 /* Khối riêng cho từng dự án */
 .project-item {
-  padding: 18px;
-  border-radius: 18px;
+  padding: 20px;
+  border-radius: 22px;
   background: #ffffff;
   border: 1px solid rgba(31, 60, 136, 0.08);
+  box-shadow: 0 10px 24px rgba(21, 33, 68, 0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(21, 33, 68, 0.1);
+  border-color: rgba(31, 60, 136, 0.16);
 }
 
 .project-item h3 {
@@ -138,13 +148,15 @@ button {
   color: #ffffff;
   background: linear-gradient(135deg, #1f3c88, #2d6cdf);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 10px 20px rgba(45, 108, 223, 0.25);
+  letter-spacing: 0.01em;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+  box-shadow: 0 10px 20px rgba(45, 108, 223, 0.22);
 }
 
 button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 24px rgba(45, 108, 223, 0.3);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 16px 28px rgba(45, 108, 223, 0.28);
+  filter: brightness(1.03);
 }
 
 button:active {
