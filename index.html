@@ -3,70 +3,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Ca Nhan</title>
+  <title>Hồ Phạm Diễm Quỳnh | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Khung chính giúp căn giữa toàn bộ nội dung -->
-  <div class="page-shell">
-    <!-- Phần đầu trang giới thiệu ngắn gọn về chủ sở hữu portfolio -->
-    <header class="hero">
-      <p class="eyebrow">Portfolio cá nhân</p>
-      <h1>Hồ Phạm Diễm Quỳnh</h1>
-      <p class="hero-text">Đã có hơn 3 năm kinh nghiệm trong lĩnh vực Sales. Hiện tại đang làm việc vị trí Sales Admin tại MKT Software.</p>
-    </header>
+  <!-- Khung chính bao toàn bộ nội dung trang -->
+  <div class="site-wrap">
+    <!-- Thanh điều hướng giúp di chuyển nhanh tới từng phần -->
+    <nav class="topbar">
+      <a class="brand" href="#home">Portfolio</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <!-- Nút bật tắt Dark Mode -->
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Bật tắt Dark Mode">
+        Dark Mode
+      </button>
+    </nav>
 
-    <main class="content">
-      <!-- Phần giới thiệu bản thân -->
-      <section class="card" id="about">
-        <h2>Giới thiệu</h2>
-        <p>
-          Tôi chuyên hỗ trợ hoạt động kinh doanh với sự tỉ mỉ và tinh thần trách nhiệm cao.
-          Tôi đóng vai trò quan trọng trong việc quản lý dữ liệu khách hàng, theo dõi đơn hàng
-          và phối hợp giữa các bộ phận để đảm bảo quy trình bán hàng diễn ra trơn tru. Với
-          phong cách làm việc chủ động, tổ chức tốt và chú trọng hiệu quả, tôi góp phần nâng cao
-          hiệu suất và chất lượng dịch vụ của đội ngũ kinh doanh.
-        </p>
+    <main>
+      <!-- Hero section là phần giới thiệu đầu tiên của trang -->
+      <section class="hero" id="home">
+        <!-- Avatar tròn đặt ở trung tâm để tạo điểm nhấn đầu trang -->
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-frame">
+              <div class="avatar-placeholder" aria-label="Ảnh đại diện tạm thời">
+                <span>HQ</span>
+              </div>
+            </div>
+            <div class="status-badge">Open to Work</div>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Sales Admin Portfolio</p>
+          <h1>Hồ Phạm Diễm Quỳnh</h1>
+          <p class="hero-tagline">Sales Admin • Business Support • Data Coordination</p>
+          <p class="hero-text">
+            Đã có hơn 3 năm kinh nghiệm trong lĩnh vực Sales. Hiện tại đang làm việc ở vị trí
+            Sales Admin tại MKT Software.
+          </p>
+
+          <!-- Nhóm nút kêu gọi hành động -->
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Liên hệ</a>
+            <a class="button button-secondary" href="#projects">Xem dự án</a>
+          </div>
+
+          <!-- Các ý chính giúp người xem nắm nhanh hồ sơ -->
+          <ul class="hero-highlights">
+            <li>3+ năm kinh nghiệm hỗ trợ hoạt động kinh doanh</li>
+            <li>Thế mạnh về dữ liệu, đơn hàng và báo cáo</li>
+            <li>Phối hợp hiệu quả với nhiều phòng ban</li>
+          </ul>
+        </div>
       </section>
 
-      <!-- Phần danh sách kỹ năng nổi bật -->
-      <section class="card" id="skills">
-        <h2>Kỹ năng</h2>
-        <ul class="skills-list">
-          <li>Quản lý dữ liệu và báo cáo: theo dõi đơn hàng, cập nhật CRM, tổng hợp báo cáo kinh doanh</li>
-          <li>Tin học văn phòng: thành thạo Excel, Google Sheets, Word để quản lý và phân tích dữ liệu</li>
-          <li>Quy trình bán hàng: hiểu và hỗ trợ vận hành pipeline sales hiệu quả</li>
-          <li>Quản lý công việc: sắp xếp và theo dõi nhiều đầu việc cùng lúc</li>
-          <li>Chú ý chi tiết: hạn chế sai sót trong dữ liệu và quy trình</li>
-          <li>Phối hợp liên phòng ban: kết nối Sales, Marketing, Kế toán và DEV</li>
-          <li>Giao tiếp và hỗ trợ: làm việc tốt với đội sales và khách hàng nội bộ</li>
-          <li>Giải quyết vấn đề: xử lý nhanh các tình huống phát sinh trong đơn hàng</li>
-          <li>Chủ động và trách nhiệm: luôn đảm bảo tiến độ công việc</li>
-          <li>Quản lý thời gian: ưu tiên công việc hợp lý và đúng deadline</li>
-        </ul>
-      </section>
+      <!-- Section giới thiệu chi tiết hơn về bản thân -->
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="section-label">About me</p>
+          <h2>Chuyên nghiệp trong vận hành, rõ ràng trong phối hợp</h2>
+        </div>
 
-      <!-- Phần dự án được giữ tối giản theo yêu cầu -->
-      <section class="card" id="projects">
-        <h2>Dự án</h2>
-        <div class="project-grid">
-          <article class="project-item">
-            <h3>Đang cập nhật</h3>
-            <p>Tôi sẽ bổ sung các dự án hoặc thành tựu công việc tiêu biểu trong thời gian tới.</p>
+        <div class="about-grid">
+          <article class="panel about-story">
+            <h3>Tôi là ai</h3>
+            <p>
+              Tôi là người có kinh nghiệm trong lĩnh vực hỗ trợ kinh doanh và vận hành sales,
+              luôn làm việc với sự tỉ mỉ, trách nhiệm và tinh thần chủ động. Trong công việc,
+              tôi tập trung vào việc quản lý dữ liệu khách hàng, theo dõi đơn hàng, cập nhật CRM
+              và đảm bảo các đầu việc hỗ trợ sales được xử lý đầy đủ, đúng tiến độ.
+            </p>
+            <p>
+              Tôi tin rằng một quy trình rõ ràng và dữ liệu chính xác là nền tảng để đội ngũ
+              kinh doanh vận hành hiệu quả. Vì vậy, tôi luôn ưu tiên tính hệ thống, khả năng
+              tổ chức và sự cẩn thận trong từng đầu việc.
+            </p>
+          </article>
+
+          <article class="panel about-story">
+            <h3>Điểm mạnh và định hướng</h3>
+            <p>
+              Điểm mạnh của tôi là khả năng theo dõi nhiều đầu việc cùng lúc, phối hợp tốt với
+              các bộ phận liên quan và xử lý nhanh những vấn đề phát sinh trong quá trình bán hàng.
+              Tôi cũng chú trọng việc giảm sai sót, giữ tiến độ và đảm bảo thông tin luôn minh bạch.
+            </p>
+            <p>
+              Trong thời gian tới, tôi mong muốn tiếp tục phát triển theo hướng Sales Operations
+              và Business Support, nâng cao kỹ năng dữ liệu, tối ưu quy trình và trở thành một
+              nhân sự hỗ trợ chiến lược đáng tin cậy cho doanh nghiệp.
+            </p>
           </article>
         </div>
       </section>
 
-      <!-- Phần liên hệ với email và nút hành động -->
-      <section class="card contact-card" id="contact">
-        <h2>Liên hệ</h2>
-        <p>Email: <a href="mailto:hpdquynh.work@gmail.com">hpdquynh.work@gmail.com</a></p>
-        <button id="contactButton" type="button">Liên hệ để trao đổi công việc</button>
+      <!-- Section kỹ năng được chia theo nhóm để dễ nhìn -->
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="section-label">Skills</p>
+          <h2>Nền tảng kỹ năng hỗ trợ vận hành sales hiệu quả</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="panel skill-card">
+            <h3>Dữ liệu và báo cáo</h3>
+            <ul>
+              <li>Theo dõi đơn hàng và cập nhật CRM</li>
+              <li>Tổng hợp báo cáo kinh doanh định kỳ</li>
+              <li>Kiểm tra dữ liệu chính xác và dễ tra cứu</li>
+            </ul>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>Quản lý công việc</h3>
+            <ul>
+              <li>Sắp xếp nhiều đầu việc cùng lúc</li>
+              <li>Ưu tiên công việc hợp lý theo deadline</li>
+              <li>Hạn chế sai sót trong quy trình xử lý</li>
+            </ul>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>Công cụ văn phòng</h3>
+            <ul>
+              <li>Excel, Google Sheets, Word</li>
+              <li>Trình bày và phân tích dữ liệu cơ bản</li>
+              <li>Tạo file theo dõi rõ ràng, dễ sử dụng</li>
+            </ul>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>Phối hợp và hỗ trợ</h3>
+            <ul>
+              <li>Kết nối Sales, Marketing, Kế toán và DEV</li>
+              <li>Giao tiếp tốt với khách hàng nội bộ</li>
+              <li>Chủ động xử lý vấn đề phát sinh</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section dự án hiển thị dưới dạng card -->
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>Một số hạng mục công việc tiêu biểu</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <div class="project-tag">Sales Operations</div>
+              <div class="project-placeholder">
+                <span>Project Preview</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Tối ưu theo dõi đơn hàng</h3>
+              <p>
+                Hỗ trợ theo dõi trạng thái đơn hàng, cập nhật dữ liệu liên tục và phối hợp với các
+                bộ phận liên quan để giảm chậm trễ trong quá trình xử lý.
+              </p>
+              <a class="project-link" href="#contact">Xem dự án</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <div class="project-tag">Reporting</div>
+              <div class="project-placeholder">
+                <span>Dashboard View</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Tổng hợp báo cáo kinh doanh</h3>
+              <p>
+                Thực hiện tổng hợp số liệu, chuẩn hóa dữ liệu đầu vào và xây dựng báo cáo rõ ràng
+                để hỗ trợ đội sales và quản lý theo dõi kết quả làm việc.
+              </p>
+              <a class="project-link" href="#contact">Xem dự án</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <div class="project-tag">Cross-functional</div>
+              <div class="project-placeholder">
+                <span>Workflow Board</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Điều phối liên phòng ban</h3>
+              <p>
+                Đóng vai trò cầu nối giữa Sales, Marketing, Kế toán và DEV để đảm bảo thông tin
+                được luân chuyển đầy đủ, chính xác và đúng thời điểm.
+              </p>
+              <a class="project-link" href="#contact">Xem dự án</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section liên hệ đặt gần cuối trang -->
+      <section class="section" id="contact">
+        <div class="panel contact-panel">
+          <p class="section-label">Contact</p>
+          <h2>Sẵn sàng trao đổi công việc phù hợp</h2>
+          <p class="contact-text">
+            Nếu bạn đang tìm một Sales Admin cẩn thận, có trách nhiệm và phối hợp tốt trong môi
+            trường nhiều đầu việc, tôi sẵn sàng kết nối để trao đổi thêm.
+          </p>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:hpdquynh.work@gmail.com">Gửi email</a>
+          </div>
+
+          <div class="social-links contact-social-links">
+            <a href="https://www.facebook.com/dquynh24/" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/in/dquynhdav" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- Footer chứa thông tin liên hệ và bản quyền -->
+    <footer class="footer">
+      <p>Hồ Phạm Diễm Quỳnh</p>
+      <p>Email: <a href="mailto:hpdquynh.work@gmail.com">hpdquynh.work@gmail.com</a></p>
+      <p id="copyrightText">© 2026 Hồ Phạm Diễm Quỳnh. All rights reserved.</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
